@@ -2,7 +2,7 @@
 
 """stack.py: Stack implementation"""
 
-__author__ = 'rohitsinha'
+__author__ = 'Rohit Sinha'
 
 
 class Stack:
@@ -28,14 +28,14 @@ class Stack:
         return str(self.items).strip('[]')
 
 
-s = Stack()
-
-print(s.isEmpty())
-s.push(5)
-s.push('Hello')
-print(s.peek())
-s.push(True)
-print(s.peek())
-print(s.size())
-print(s.pop())
-print(s)
+if __name__ == '__main__':
+    s = Stack()
+    print(s.isEmpty())
+    s.push(5)
+    s.push('Hello')
+    print(s.peek())
+    s.push(True)
+    print(s.peek())
+    print(s.size())
+    print(s.pop())
+    print(s)
